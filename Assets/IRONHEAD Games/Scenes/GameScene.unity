@@ -1203,6 +1203,10 @@ PrefabInstance:
       propertyPath: ShootingButton
       value: 8192
       objectReference: {fileID: 0}
+    - target: {fileID: 8158423210558530562, guid: 99930b2561abfaa4cae77974a386e703, type: 3}
+      propertyPath: slicerGameObject
+      value: 
+      objectReference: {fileID: 2026095237}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
