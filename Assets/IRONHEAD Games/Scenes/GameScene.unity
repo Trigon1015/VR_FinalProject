@@ -1579,6 +1579,7 @@ MonoBehaviour:
   Cubeprefabs:
   - {fileID: 9220460230358506278, guid: f1044f83bc9ee9145b22f20847ceb742, type: 3}
   - {fileID: 784917196415359683, guid: b33d44cc0102bbb4db363d552a024fa0, type: 3}
+  - {fileID: 62659472629945039, guid: f5148aa7c8fdffa4d920c706bbb24c82, type: 3}
   timeRate: 0.8
 --- !u!4 &1005023592
 Transform:
