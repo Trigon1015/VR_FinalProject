@@ -2014,6 +2014,8 @@ MonoBehaviour:
   progressBarImage: {fileID: 1259635496}
   timerUI_Gameobject: {fileID: 1240951553}
   cubeSpawnManager: {fileID: 1005023590}
+  currentScoreUI_Gameobject: {fileID: 75154934}
+  finalScoreUI_Gameobject: {fileID: 546668396}
 --- !u!1 &1303676009
 GameObject:
   m_ObjectHideFlags: 0

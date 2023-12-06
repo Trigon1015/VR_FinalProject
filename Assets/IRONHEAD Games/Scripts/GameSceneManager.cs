@@ -17,6 +17,8 @@ public class GameSceneManager : MonoBehaviour
     float audioClipLength;
     private float timeToStartGame = 5.0f;
 
+    public GameObject currentScoreUI_Gameobject;
+    public GameObject finalScoreUI_Gameobject;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +33,8 @@ public class GameSceneManager : MonoBehaviour
         //Resetting progress bar
         progressBarImage.fillAmount = Mathf.Clamp(0, 0, 1);
 
+        finalScoreUI_Gameobject.SetActive(false);
+        currentScoreUI_Gameobject.SetActive(true);
 
     }
 
@@ -61,6 +65,13 @@ public class GameSceneManager : MonoBehaviour
 
         //Disable timer UI
         timerUI_Gameobject.SetActive(false);
+
+        currentScoreUI_Gameobject.SetActive(false);
+        finalScoreUI_Gameobject.SetActive(true);
+
+        //putting the final score UI in front of the camera
+        finalScoreUI_Gameobject.transform.rotation = Quaternion.Euler(Vector3.zero);
+        finalScoreUI_Gameobject.transform.position = GameObject.Find("OVRCameraRig").transform.position + new Vector3(0, 2f, 4f);
     }
 
 
