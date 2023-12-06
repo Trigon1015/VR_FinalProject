@@ -251,6 +251,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!82 &6487265 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8158423210945799095, guid: 99930b2561abfaa4cae77974a386e703, type: 3}
+  m_PrefabInstance: {fileID: 625782678}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &75154934
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1174,10 @@ PrefabInstance:
     - target: {fileID: 3099127920940236361, guid: 99930b2561abfaa4cae77974a386e703, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8158423210558530562, guid: 99930b2561abfaa4cae77974a386e703, type: 3}
+      propertyPath: ShootingButton
+      value: 8192
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2366,7 +2375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliceSound: {fileID: 3819278}
-  gunSound: {fileID: 0}
+  gunSound: {fileID: 6487265}
   musicTheme: {fileID: 1908826275}
   buttonClickSound: {fileID: 0}
 --- !u!4 &1442044316

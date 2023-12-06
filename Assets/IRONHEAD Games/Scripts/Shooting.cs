@@ -14,7 +14,8 @@ public class Shooting : MonoBehaviour
 
  
     public Animator gunAnimator;
-    
+
+    public OVRInput.Button ShootingButton;
 
     // Update is called once per frame
     void Update()
@@ -22,7 +23,7 @@ public class Shooting : MonoBehaviour
         //elapsed time
         elapsedTime += Time.deltaTime;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || OVRInput.GetDown(ShootingButton, OVRInput.Controller.RTouch))
         {
             if (elapsedTime > fireRate)
             {
