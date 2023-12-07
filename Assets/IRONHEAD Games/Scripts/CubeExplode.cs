@@ -24,7 +24,15 @@ public class CubeExplode : MonoBehaviour
         VibrationManager.instance.VibrateController(0.4f, 1, 0.3f, OVRInput.Controller.RTouch);
 
         //Add score
-        ScoreManager.instance.AddScore(ScorePoints.GUNCUBE_SCOREPOINT);
+        if(gameObject.tag == "GoldCube")
+        {
+            ScoreManager.instance.AddScore(ScorePoints.GOLDCUBE_SCOREPOINT);
+        }
+        else
+        {
+            ScoreManager.instance.AddScore(ScorePoints.GUNCUBE_SCOREPOINT);
+        }
+        
 
         Destroy(shatteredObject,1);
     }

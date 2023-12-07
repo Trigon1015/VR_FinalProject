@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class ScorePoints 
 {
-    public const int GUNCUBE_SCOREPOINT = 18;
-    public const int SWORDCUBE_SCOREPOINT = 14;
-    public const int BOMB_SCOREPOINT = 20;
+    public const int GUNCUBE_SCOREPOINT = 5;
+    public const int SWORDCUBE_SCOREPOINT = 2;
+    public const int BOMB_SCOREPOINT = 15;
+    public const int GOLDCUBE_SCOREPOINT = 30;
 }

@@ -8,6 +8,7 @@ TagManager:
   - BackButton
   - Sword
   - SamplesInfoPanel
+  - GoldCube
   layers:
   - Default
   - TransparentFX

@@ -96,9 +96,10 @@ GameObject:
   - component: {fileID: 3915731880260618787}
   - component: {fileID: 3592119604490665573}
   - component: {fileID: 1580825343612072585}
+  - component: {fileID: -8716690192764019186}
   m_Layer: 0
   m_Name: GunCubeGold
-  m_TagString: Untagged
+  m_TagString: GoldCube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -141,7 +142,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9220460230358506278}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 609471acfcb590a439f0826930f0c68d, type: 3}
   m_Name: 
@@ -195,6 +196,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.4, y: 0.4, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-8716690192764019186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9220460230358506278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74877084a8edcd94e9c5318a0d4131b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: -100
 --- !u!1001 &4031010848909395764
 PrefabInstance:
   m_ObjectHideFlags: 0
