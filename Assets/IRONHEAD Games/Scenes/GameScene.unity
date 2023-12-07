@@ -1579,7 +1579,7 @@ MonoBehaviour:
   Cubeprefabs:
   - {fileID: 9220460230358506278, guid: f1044f83bc9ee9145b22f20847ceb742, type: 3}
   - {fileID: 784917196415359683, guid: b33d44cc0102bbb4db363d552a024fa0, type: 3}
-  - {fileID: 62659472629945039, guid: f5148aa7c8fdffa4d920c706bbb24c82, type: 3}
+  - {fileID: 7037138832937157945, guid: c9b633193615c214bbb24f0743b6e463, type: 3}
   timeRate: 0.8
 --- !u!4 &1005023592
 Transform:
@@ -4100,7 +4100,7 @@ MonoBehaviour:
   MaterialAfterSlice: {fileID: 2100000, guid: fe639409707168a4c997613678ae8475, type: 2}
   sliceMask:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   isTouched: 0
 --- !u!1 &2041047709
 GameObject:

@@ -26,8 +26,17 @@ public class Slicer : MonoBehaviour
                 //Vibration
                 VibrationManager.instance.VibrateController(0.4f, 1, 0.3f, OVRInput.Controller.LTouch);
 
+               
                 //Add score
-                ScoreManager.instance.AddScore(ScorePoints.SWORDCUBE_SCOREPOINT);
+                if(objectToBeSliced.gameObject.layer == 6)
+                {
+                    ScoreManager.instance.AddScore(ScorePoints.SWORDCUBE_SCOREPOINT);
+                }
+                else if(objectToBeSliced.gameObject.layer == 7)
+                {
+                    ScoreManager.instance.AddScore(ScorePoints.BOMB_SCOREPOINT);
+                }
+                
 
                 upperHullGameobject.transform.position = objectToBeSliced.transform.position;
                 lowerHullGameobject.transform.position = objectToBeSliced.transform.position;
