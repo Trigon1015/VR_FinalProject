@@ -311,6 +311,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7934836039279491117, guid: 69edaa7f6d0367845b76420b47e4be35, type: 3}
   m_PrefabInstance: {fileID: 66822544}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &184863581 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3109631380473908606, guid: b787c76c5e9f27d49b0358e843b9edb8, type: 3}
+  m_PrefabInstance: {fileID: 1561867927}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &187576606 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7831097737701882380, guid: 6498a99bb2c56a34fb748cb1d00b2d0e, type: 3}
@@ -734,7 +739,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2295
+    m_Bits: 3327
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -795,11 +800,11 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.08
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &883852860
 MonoBehaviour:
@@ -816,7 +821,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1024
   m_InteractionLayers:
     m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
@@ -1421,7 +1426,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   m_InteractionLayers:
-    m_Bits: 0
+    m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
@@ -1896,7 +1901,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 16179
+    m_Bits: 16187
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 9792f8a8c9db37343b1223b74448a1c1, type: 2}
   m_TargetDisplay: 0
@@ -1925,7 +1930,7 @@ GameObject:
   - component: {fileID: 1173510434}
   - component: {fileID: 1173510433}
   - component: {fileID: 1173510435}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: XR Rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2265,6 +2270,10 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3109631380473908605, guid: b787c76c5e9f27d49b0358e843b9edb8, type: 3}
+      propertyPath: m_Name
+      value: Cap Attach Transform
+      objectReference: {fileID: 0}
+    - target: {fileID: 3109631380473908605, guid: b787c76c5e9f27d49b0358e843b9edb8, type: 3}
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
@@ -2429,7 +2438,7 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 184863581}
   m_SecondaryAttachTransform: {fileID: 0}
   m_UseDynamicAttach: 0
   m_MatchAttachPosition: 1
@@ -2970,7 +2979,7 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 0.08
-  m_Center: {x: 0, y: -1.1176, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2014646010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2986,7 +2995,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 731720502}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1024
   m_InteractionLayers:
     m_Bits: 4294967295
   m_AttachTransform: {fileID: 0}
@@ -6144,7 +6153,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 2048
   m_InteractionLayers:
-    m_Bits: 0
+    m_Bits: 4294967295
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
   m_FocusMode: 1
