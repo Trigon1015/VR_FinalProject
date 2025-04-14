@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ButtonInteraction : MonoBehaviour
 {
     public void OnButtonPressed()
     {
-        Debug.Log("Button Pressed");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
