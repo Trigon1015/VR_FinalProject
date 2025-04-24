@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 
 public class LoginManager : MonoBehaviourPunCallbacks
 {
@@ -9,13 +10,20 @@ public class LoginManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        PhotonNetwork.ConnectUsingSettings();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+    #endregion
+
+    #region UI Callback Methods
+    public void ConnectAnonymously()
+    {
+        PhotonNetwork.ConnectUsingSettings();
     }
     #endregion
 
