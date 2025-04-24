@@ -2917,6 +2917,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3353666616870502134, guid: 848deb2f93882af4d9e6a022dc1393d2, type: 3}
   m_PrefabInstance: {fileID: 1154111234}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1154111236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3353666618156345472, guid: 848deb2f93882af4d9e6a022dc1393d2, type: 3}
+  m_PrefabInstance: {fileID: 1154111234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1154111237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3353666617184783469, guid: 848deb2f93882af4d9e6a022dc1393d2, type: 3}
+  m_PrefabInstance: {fileID: 1154111234}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1173510426
 GameObject:
   m_ObjectHideFlags: 0
@@ -3211,6 +3233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f83ebab8b9b08274b8518456e75d5fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OccupancyRateText_ForSchool: {fileID: 1154111237}
+  OccupancyRateText_ForOutdoor: {fileID: 1154111236}
 --- !u!1 &1338310396
 GameObject:
   m_ObjectHideFlags: 0
