@@ -7,6 +7,6 @@ public class ButtonInteraction : MonoBehaviour
 {
     public void OnButtonPressed()
     {
-        SceneManager.LoadScene(1); 
+        //SceneManager.LoadScene(1); 
     }
 }
