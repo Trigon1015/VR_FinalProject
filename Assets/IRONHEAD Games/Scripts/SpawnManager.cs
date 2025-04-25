@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class SpawnManager : MonoBehaviour
+public class SpawnManager : MonoBehaviourPunCallbacks
 {
     [SerializeField] 
     GameObject GenericVRPlayerPrefab;
@@ -11,8 +11,9 @@ public class SpawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(PhotonNetwork.IsConnected)
+        if(PhotonNetwork.IsConnectedAndReady)
         {
+            Debug.Log("creating Generic Vr Prefab when is connected and ready");
             PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.identity);
         }
     }
@@ -23,6 +24,15 @@ public class SpawnManager : MonoBehaviour
         
     }
 
-    
+    public override void OnJoinedRoom()
+    {
+        Debug.Log("Joined room, creating Generic Vr Prefab");
+        if (PhotonNetwork.IsConnected)
+        {
+            PhotonNetwork.Instantiate(GenericVRPlayerPrefab.name, spawnPosition, Quaternion.identity);
+        }
+    }
+
+
 
 }
