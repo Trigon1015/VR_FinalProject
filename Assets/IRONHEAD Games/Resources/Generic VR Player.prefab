@@ -1047,6 +1047,7 @@ GameObject:
   - component: {fileID: 7629177084082681797}
   - component: {fileID: 4715560215181513705}
   - component: {fileID: -6368664071238265374}
+  - component: {fileID: 1008129506718415339}
   m_Layer: 0
   m_Name: Generic VR Player
   m_TagString: Untagged
@@ -1088,8 +1089,9 @@ MonoBehaviour:
   prefixField: -1
   Synchronization: 3
   OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents: []
+  observableSearch: 0
+  ObservedComponents:
+  - {fileID: 1008129506718415339}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -1108,6 +1110,22 @@ MonoBehaviour:
   LocalXRRigGameObject: {fileID: 8068155926997698363}
   AvatarHeadGameObject: {fileID: 1203477638257025120}
   AvatarBodyGameObject: {fileID: 6155647879437362410}
+--- !u!114 &1008129506718415339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724386915148234675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
 --- !u!1 &1626895599162205124
 GameObject:
   m_ObjectHideFlags: 0
