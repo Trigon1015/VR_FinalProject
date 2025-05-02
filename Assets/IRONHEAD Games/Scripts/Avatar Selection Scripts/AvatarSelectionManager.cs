@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class AvatarSelectionManager : MonoBehaviour
 {
@@ -38,12 +39,10 @@ public class AvatarSelectionManager : MonoBehaviour
         ////Initially, de-activating the Avatar Selection Platform.
         //AvatarSelectionPlatformGameobject.SetActive(false);
 
-        avatarSelectionNumber = 0;
-        ActivateAvatarModelAt(avatarSelectionNumber);
-        LoadAvatarModelAt(avatarSelectionNumber);
+        
 
-        //object storedAvatarSelectionNumber;
-        /*
+        object storedAvatarSelectionNumber;
+        
         if (PhotonNetwork.LocalPlayer.CustomProperties.TryGetValue(MultiplayerVRConstants.AVATAR_SELECTION_NUMBER, out storedAvatarSelectionNumber))
         {
             Debug.Log("Stored avatar selection number: "+ (int)storedAvatarSelectionNumber);
@@ -57,7 +56,7 @@ public class AvatarSelectionManager : MonoBehaviour
             ActivateAvatarModelAt(avatarSelectionNumber);
             LoadAvatarModelAt(avatarSelectionNumber);
         }
-        */
+        
 
        
     }
@@ -133,7 +132,7 @@ public class AvatarSelectionManager : MonoBehaviour
         avatarInputConverter.AvatarHand_Left = loadableAvatarModels[avatarIndex].GetComponent<AvatarHolder>().HandLeftTransform;
         avatarInputConverter.AvatarHand_Right = loadableAvatarModels[avatarIndex].GetComponent<AvatarHolder>().HandRightTransform;
 
-        //ExitGames.Client.Photon.Hashtable playerSelectionProp = new ExitGames.Client.Photon.Hashtable() { {MultiplayerVRConstants.AVATAR_SELECTION_NUMBER,avatarSelectionNumber } };
-        //PhotonNetwork.LocalPlayer.SetCustomProperties(playerSelectionProp);
+        ExitGames.Client.Photon.Hashtable playerSelectionProp = new ExitGames.Client.Photon.Hashtable() { {MultiplayerVRConstants.AVATAR_SELECTION_NUMBER,avatarSelectionNumber } };
+        PhotonNetwork.LocalPlayer.SetCustomProperties(playerSelectionProp);
     }
 }
