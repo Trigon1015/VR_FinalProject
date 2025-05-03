@@ -9,6 +9,9 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
 {
 
     public GameObject LocalXRRigGameObject;
+    public GameObject MainAvatarGameObject;
+
+
     public GameObject AvatarHeadGameObject;
     public GameObject AvatarBodyGameObject;
     public GameObject[] AvatarModelPrefabs;
@@ -42,6 +45,8 @@ public class PlayerNetworkSetup : MonoBehaviourPunCallbacks
                     item.teleportationProvider = LocalXRRigGameObject.GetComponent<TeleportationProvider>();
                 }
             }
+            MainAvatarGameObject.AddComponent<AudioListener>();
+            Debug.Log("Here?");
 
         }
         else
