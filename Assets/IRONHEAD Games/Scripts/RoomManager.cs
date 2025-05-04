@@ -5,6 +5,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.UIElements;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviourPunCallbacks
 {
@@ -51,6 +52,11 @@ public class RoomManager : MonoBehaviourPunCallbacks
         mapType = MultiplayerVRConstants.MAP_TYPE_VALUE_SCHOOL;
         ExitGames.Client.Photon.Hashtable expectedCustomRoomProperties = new ExitGames.Client.Photon.Hashtable() { { MultiplayerVRConstants.MAP_TYPE_KEY, mapType} };
         PhotonNetwork.JoinRandomRoom(expectedCustomRoomProperties, 0);
+    }
+
+    public void OnEnterButtonClicked_Game()
+    {
+        SceneManager.LoadScene("LobbyScene");
     }
 
     #endregion
